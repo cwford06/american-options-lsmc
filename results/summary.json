@@ -1,0 +1,41 @@
+{
+ "benchmark_mean_abs_err_vs_bermudan_cents": 0.533989326423947,
+ "benchmark_max_abs_err_vs_bermudan_cents": 1.2938155422062003,
+ "base_american": 4.486678994817078,
+ "base_bermudan_50": 4.47791471633761,
+ "base_european": 3.84430779159684,
+ "rmse_100k_paths_cents": 0.7810294071245,
+ "best_basis": {
+  "spec": "OLS, all paths",
+  "family": "laguerre",
+  "degree": 4,
+  "rmse_cents": 1.0184460736384582
+ },
+ "variance_reduction": {
+  "Plain Monte Carlo": 1.0,
+  "Moment matching only": 2.49,
+  "European control variate only": 1.4,
+  "Antithetic paths only": 2.56,
+  "Antithetic + moment matching": 2.38,
+  "Antithetic + control variate": 2.53,
+  "All three": 2.29
+ },
+ "ml_mean_oos_error_cents": {
+  "OLS \u00b7 Laguerre 3": -1.29,
+  "Ridge \u00b7 power 6": -2.57,
+  "Neural net (MLP)": -2.72,
+  "Gradient boosting": -4.95,
+  "RL \u00b7 LSPI": -4.28,
+  "RL \u00b7 FQI": -7.28
+ },
+ "seconds": 177.7,
+ "sampling_variance_reduction": {
+  "Plain Monte Carlo": 1.0,
+  "Moment matching only": 1.0,
+  "European control variate only": 1.47,
+  "Antithetic paths only": 2.3,
+  "Antithetic + moment matching": 2.3,
+  "Antithetic + control variate": 2.54,
+  "All three": 2.54
+ }
+}
